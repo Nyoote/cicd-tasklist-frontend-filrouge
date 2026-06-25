@@ -39,3 +39,5 @@ junit*.xml
 *.tsbuildinfo
 
 .scannerwork/
+
+sonar-project.properties
