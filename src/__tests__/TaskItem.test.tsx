@@ -1,7 +1,8 @@
 import { render, screen, fireEvent, act } from '@testing-library/react';
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { TaskItem } from '../components/TaskItem';
 import type { Task } from '../types/task';
+
 
 const mockTask: Task = {
 	id: 1,
