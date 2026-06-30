@@ -1,12 +1,6 @@
 pipeline {
     agent any
 
-    options {
-        timeout(time: 30, unit: 'MINUTES')
-        timestamps()
-        buildDiscarder(logRotator(numToKeepStr: '10'))
-    }
-
     environment {
         DOCKER_IMAGE = "nyoote/tasklist-frontend"
         DOCKER_TAG = "${BUILD_NUMBER}"
