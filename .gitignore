@@ -40,5 +40,4 @@ junit*.xml
 
 .scannerwork/
 
-sonar-project.properties
 sbom-spdx.json
